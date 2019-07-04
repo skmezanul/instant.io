@@ -30,7 +30,8 @@
     "unlimited": "^1.1.0",
     "upload-element": "^1.0.1",
     "webtorrent": "0.x",
-    "xhr": "^2.0.0"
+    "xhr": "^2.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "nodemon": "^1.2.1",
@@ -63,6 +64,9 @@
     "update-authors": "./bin/update-authors.sh",
     "watch": "npm run watch-css & npm run watch-js & DEBUG=instant* nodemon server",
     "watch-css": "stylus css/main.styl -o static/ -w",
-    "watch-js": "watchify client -o static/bundle.js -dv"
-  }
+    "watch-js": "watchify client -o static/bundle.js -dv",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
