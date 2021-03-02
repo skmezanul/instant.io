@@ -21,7 +21,7 @@
     "express": "^4.8.5",
     "moment": "^2.15.1",
     "prettier-bytes": "^1.0.3",
-    "pug": "^2.0.0-beta3",
+    "pug": "^3.0.1",
     "run-parallel": "^1.0.0",
     "stylus": "^0.54.0",
     "throttleit": "^1.0.0",
